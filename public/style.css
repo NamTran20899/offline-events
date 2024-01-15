@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body {
+html,body {
     background-image: url("images/Background.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -15,10 +15,9 @@ body {
 .container-1 {
     width: 430px;
 }
-
 #logo {
-    margin-left: 5px;
     margin-top: 64px;
+    margin-left: 5px;
 }
 
 #banner {
@@ -83,6 +82,7 @@ body {
 #accordion {
     display: grid;
     gap: 24px;
+    justify-content: center;
     justify-items: center;
     width: 100%
 }
@@ -92,7 +92,10 @@ body {
     grid-template-columns: auto auto auto;
     align-items: center;
     justify-items: center;
-    width: 100%
+    width: 95%;
+}
+.test {
+    margin-left: 5px
 }
 
 .accordion-title {
@@ -123,7 +126,7 @@ body {
     border-radius: 10px;
     background: rgba(1, 13, 124, 0.80);   
     text-align: center;
-    width: 411px;
+    width: 93%;
     height: 295px;
     display: grid;
     grid-template-rows: 71px auto;
@@ -166,37 +169,6 @@ body {
     display: none
 }
 
-#plus-1 {
-    margin-left: 3px;
-}
-#title-2 {
-    margin-left: 5px;
-}
-#plus-2 {
-    margin-left: 5px;
-}
-
-#title-3 {
-    margin-right: 10px;
-}
-#plus-3 {
-    margin-left: 3px;
-}
-
-#title-4 {
-    margin-right: 15px;
-}
-#plus-4 {
-    margin-left: 3px;
-}
-
-#title-5 {
-    margin-left: 10px;
-}
-#plus-5 {
-    margin-left: 8px;
-}
-
 #khu-thi-luyen-moc-nhan {
     height: 322px;
 }
@@ -215,6 +187,10 @@ body {
 
 #khu-quay-chaos {
     height: 322px;
+}
+
+.plus {
+    margin-right: 10px;
 }
 
 .param {
@@ -300,9 +276,10 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 20px;
-    padding: 32px 15px;
+    gap: 10px;
+    padding: 32px 0;
     justify-items: center;
+    justify-content: center;
 }
   
 .item1 { grid-area: 1 / 1 / 2 / 2; }
@@ -534,17 +511,27 @@ footer {
 
 #khu-tuu-lau .accordion-open-img {
     position: absolute;
-    right: 0;
+    right: 20px;
 }
 
 #khu-thi-luyen-moc-nhan .accordion-open-img {
     position: absolute;
-    right: 0;
+    right: 15px;
+}
+
+#khu-oot-va-boc-que .accordion-open-img {
+    position: absolute;
+    right: 10px;
+}
+
+#khu-quay-chaos {
+    position: relative;
 }
 
 #khu-quay-chaos .accordion-open-img {
     position: absolute;
-    right: 0;
+    right: 3px;
+    top: -14px;
 }
 
 #khu-trải-nghiệm-game-mới .accordion-open-img {
@@ -555,4 +542,292 @@ footer {
 #checkin .accordion-open-img {
     position: absolute;
     right: 20px;
+}
+
+@media screen and (width: 414px) {
+    html,body {
+        background-size: 414px auto;
+    }
+    .container-1 {
+        width: 414px;
+    }
+    .image1 {
+        width: 414px;
+    }
+    #gaming-area .image1 {
+        position: relative;
+        top: 0;
+        left: 2px;
+    }
+    #gaming-area .image2 {
+        position: absolute;
+        top: 25px;
+        left: 23px;
+    }
+
+    #gift-area .image1 {
+        position: relative;
+        top: 0;
+        left: 2px;
+    }
+    #gift-area .image2 {
+        position: absolute;
+        top: 16px;
+        left: 22px;
+    }
+
+    #events .image1 {
+        position: relative;
+        top: 0;
+        left: 2px;
+    }
+    #events .image2 {
+        position: absolute;
+        top: 27px;
+        left: 20px;
+    }
+
+    #food .image1 {
+        position: relative;
+        top: 0;
+        left: 2px;
+    }
+    #food .image2 {
+        position: absolute;
+        top: 28px;
+        left: 100px;
+    }
+
+    .food {
+        margin-left: 20px;
+    }
+
+    .rules {
+        margin: 25px;
+    }
+
+    #khu-tuu-lau {
+        width: 400px;
+        margin-left: 10px;
+    }
+    #khu-tuu-lau .accordion-open-img {
+        position: absolute;
+        right: 10px;
+    }
+    #khu-thi-luyen-moc-nhan {
+        width: 400px;
+        margin-left: 10px;
+    }
+    #khu-thi-luyen-moc-nhan .accordion-open-img {
+        position: absolute;
+        right: 4px;
+    }
+    #khu-oot-va-boc-que {
+        position:relative;
+        width: 400px;
+        margin-left: 10px;
+    }
+    #khu-oot-va-boc-que .accordion-open-img {
+        position: absolute;
+        right: 4px;
+    }
+    #khu-quay-chaos {
+        position: relative;
+        width: 400px;
+        margin-left: 10px;
+    }
+    #khu-quay-chaos .accordion-open-img {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+    #khu-trải-nghiệm-game-mới {
+        width: 400px;
+        margin-left: 10px;
+    }
+    #khu-trải-nghiệm-game-mới .accordion-open-img {
+        position: absolute;
+        right: -5px;
+    }
+    #checkin {
+        position: relative;
+        width: 400px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (width: 390px) {
+    html,body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container-1 {
+        width: 100%;
+    }
+    header {
+        margin-left: 40px;
+    }
+    #money img {
+        width: 375px;
+    }
+    #gaming-area {
+        margin-left: 35px;
+    }
+    #gift-area {
+        margin-left: 55px;
+    }
+    #food {
+        margin-left: 25px;
+    }
+    .grid-container {
+        margin-left: -30px
+    }
+    #events .image1 {
+        position: relative;
+        top: 0;
+        left: 32px;
+    }
+    #card-img {
+        position: relative;
+        top: 0;
+        left: -18px;
+        margin-top: 23px;
+    }
+    .image1 {
+        width: 390px;
+    }
+    #gaming-area .image1 {
+        position: relative;
+        top: 0;
+        left: 24px;
+    }
+    #gaming-area .image2 {
+        position: absolute;
+        width: 350px;
+        top: 24px;
+        left: 45px;
+    }
+    #gift-area .image1 {
+        position: relative;
+        top: 0;
+        left: 3px;
+    }
+    #gift-area .image2 {
+        position: absolute;
+        width: 350px;
+        top: 18px;
+        left: 23px;
+    }
+    #events .image1 {
+        position: relative;
+        top: 0;
+        left: 42px;
+    }
+    #events .image2 {
+        position: absolute;
+        width: 350px;
+        top: 25px;
+        left: 60px;
+    }
+    .timeline {
+        margin-left: 20px;
+    }
+    #food .image1 {
+        position: relative;
+        top: 0;
+        left: 10px;
+    }
+    #food .image2 {
+        position: absolute;
+        top: 26px;
+        left: 90px;
+    }
+    footer {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (width: 375px) {
+    html,body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container-1 {
+        width: 100%;
+    }
+    header {
+        margin-left: 20px;
+    }
+    #money img {
+        width: 375px;
+    }
+    #gaming-area {
+        margin-left: 30px;
+    }
+    #gift-area {
+        margin-left: 45px;
+    }
+    #food {
+        margin-left: 30px;
+    }
+    .grid-container {
+        margin-left: -12px;
+    }
+    #events .image1 {
+        position: relative;
+        top: 0;
+        left: 32px;
+    }
+    .image1 {
+        width: 390px;
+    }
+    #gaming-area .image1 {
+        position: relative;
+        top: 0;
+        left: 5px;
+    }
+    #gaming-area .image2 {
+        position: absolute;
+        width: 350px;
+        top: 24px;
+        left: 25px;
+    }
+    #gift-area .image1 {
+        position: relative;
+        top: 0;
+        left: 3px;
+    }
+    #gift-area .image2 {
+        position: absolute;
+        width: 350px;
+        top: 18px;
+        left: 23px;
+    }
+    #events .image1 {
+        position: relative;
+        top: 0;
+        left: 34px;
+    }
+    #events .image2 {
+        position: absolute;
+        width: 350px;
+        top: 25px;
+        left: 54px;
+    }
+    .timeline {
+        margin-left: 20px;
+    }
+    #food .image1 {
+        position: relative;
+        top: 0;
+        left: 3px;
+    }
+    #food .image2 {
+        position: absolute;
+        top: 26px;
+        left: 90px;
+    }
+    footer {
+        margin-left: 25px;
+    }
 }
