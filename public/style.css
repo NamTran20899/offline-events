@@ -1,17 +1,16 @@
-* {
+*,html {
     padding: 0;
     margin: 0;
 }
 
-html,body {
+body {
     background-image: url("images/Background.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: top;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
-
 .container-1 {
     width: 430px;
 }
@@ -545,7 +544,7 @@ footer {
 }
 
 @media screen and (width: 414px) {
-    html,body {
+    body {
         background-size: 414px auto;
     }
     .container-1 {
@@ -657,7 +656,7 @@ footer {
 }
 
 @media screen and (width: 390px) {
-    html,body {
+    body {
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -748,7 +747,7 @@ footer {
 }
 
 @media screen and (width: 375px) {
-    html,body {
+    body {
         background-size: cover;
         background-repeat: no-repeat;
     }
