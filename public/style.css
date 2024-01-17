@@ -330,7 +330,7 @@ footer {
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 footer img {
     width: 20%;
@@ -388,6 +388,9 @@ footer img {
     #charger img {
         width: 50%;
     }
+    .right::after {
+        left: -3.77%;
+    }
 }
 @media screen and (max-width: 770px) {
     #card {
@@ -395,6 +398,9 @@ footer img {
     }
     .plus , .minus {
         width: 90%;
+    }
+    .right::after {
+        left: -4.125%;
     }
 }
 @media screen and (max-width: 650px) {
@@ -455,10 +461,16 @@ footer img {
     .plus , .minus {
         width: 75%;
     }
+    .right::after {
+        left: -4.75%;
+    }
 }
 @media screen and (max-width: 450px) {
     #card {
         height: 40vh;
+    }
+    .right::after {
+        left: -5.5%;
     }
 }
 @media screen and (max-width: 360px) {
@@ -489,5 +501,8 @@ footer img {
     }
     .accordion-open-content p {
         font-size: 8px;
+    }
+    .right::after {
+        left: -7.25%;
     }
 }
