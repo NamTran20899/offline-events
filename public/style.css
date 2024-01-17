@@ -467,7 +467,7 @@ footer img {
 }
 @media screen and (max-width: 450px) {
     #card {
-        height: 40vh;
+        height: 45vh;
     }
     .right::after {
         left: -5.5%;
