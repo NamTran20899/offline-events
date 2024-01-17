@@ -1,373 +1,254 @@
-*,html {
-    padding: 0;
-    margin: 0;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
-
 body {
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    max-width: 64rem;
+}
+.main {
     background-image: url("images/Background.png");
     background-repeat: no-repeat;
     background-position: top;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    background-size: cover;
+    scroll-behavior: smooth; 
 }
-.container-1 {
-    width: 430px;
-}
-#logo {
+header #logo {
     margin-top: 64px;
     margin-left: 5px;
+    width: 30%;
 }
-
+/*-- Banner --*/
 #banner {
     margin-top: 9px;
-}
-
-#banner > div {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
 }
-
-#valuable {
-    margin-top: 7px;
+#banner-logo-orange {
+    width: 50%;
 }
-
-#money {
-    position: relative;
+#banner-gift {
+    width: 75%;
 }
-
+#banner-money {
+    width: 90%;
+}
 #address {
     justify-content: center;
     align-items: center;
     display: flex;
 }
-
-#address > img {
+#address img {
     width: 21px;
     height: 21px;
     margin-right: 6px;
 }
-
-#address > p {
+#address p {
     text-align: start;
-    width: 324px;
+    width: 350px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
+/*-- End-Banner --*/
 
-#gaming-area {
+/*-- Gaming-Area --*/
+.content-title {
+    background-image: url("images/Frame-board.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    text-align: center;
     position: relative;
-    top: 0;
-    left: 0;
-}
-
-#gaming-area .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#gaming-area .image2 {
-    position: absolute;
-    top: 28px;
-    left: 29px;
-}
-
-#accordion {
-    display: grid;
-    gap: 24px;
+    background-size: 95%;
     justify-content: center;
+    background-position: center;
+    display: grid;
+    align-items: center;
     justify-items: center;
-    width: 100%
+    margin: 25px 0;
 }
-
+.content-title img {
+    width: 80%;
+    margin-top: 10px;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 .item {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto 55% auto;
+    width: 80%;
     align-items: center;
-    justify-items: center;
-    width: 95%;
+    gap: 10px;
 }
-.test {
-    margin-left: 5px
+.plus , .minus {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
 }
-
+.minus {
+    display: none;
+}
 .accordion-title {
-    align-items: center;
     display: flex;
     border-radius: 10px;
     background: rgba(1, 13, 124, 0.80);
-    width: 227px;
-    height: 59px;
+    width: 70%;
+    height: 100px;
     text-align: center;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
 }
-
-.accordion-title > p,
-.accordion-open-title > p {
-    width: 100%;
-    margin: 0;
+.accordion-title p {
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
-
-.accordion-open {
+.accordion-open-content { 
+    grid-area: 2 / 1 / 2 / span 3; 
     display: none;
-    align-items: center;
-    border-radius: 10px;
-    background: rgba(1, 13, 124, 0.80);   
-    text-align: center;
-    width: 93%;
-    height: 295px;
-    display: grid;
-    grid-template-rows: 71px auto;
 }
-
-.accordion-open-head {
-    display: grid;
-    grid-template-columns: 38px auto auto;
-    height: 100%;
-}
-
-.accordion-open-head > .minus {
-    margin-top: 12px;
-    margin-left: 8px;
-}
-
-.accordion-open-title > p {
-    margin-top: 15px;
-    margin-left: 15px;
-    text-align: left;
-    width: 250px;
-}
-
-.accordion-open-content {
-    grid-column: 1 / span 3;
-}
-
-.accordion-open-content > p {
+.accordion-open-content p {
+    text-align: start;
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 13px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 900;
-    line-height: 2.3;
-    text-align: left;
-    margin: 0 18px 8px 16px;
+    line-height: 2;
+    margin-left: 10px;
 }
+#logo-1,
+#logo-2,
+#logo-3,
+#logo-4,
+#logo-5,
+#logo-6 {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+}
+/*-- End-Gaming-Area --*/
 
-.accordion-open {
-    display: none
-}
-
-#khu-thi-luyen-moc-nhan {
-    height: 322px;
-}
-
-#khu-thi-luyen-moc-nhan .accordion-open-title p {
-    margin-top: 7px !important;
-}
-
-#khu-thi-luyen-moc-nhan .accordion-open-content p {
-    line-height: 2.3;
-}
-
-#khu-oot-va-boc-que {
-    height: 322px;
-}
-
-#khu-quay-chaos {
-    height: 322px;
-}
-
-.plus {
-    margin-right: 10px;
-}
-
-.param {
-    margin-top: 7px !important;
-}
-
-#checkin .accordion-open-img {
-    margin-top: 20px;
-}
-
-#gift-area {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 23px;
-}
-#gift-area .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-#gift-area .image2 {
-    position: absolute;
-    top: 20px;
-    left: 29px;
-}
-
+/*-- Gift-Area --*/
 .rules {
     border-radius: 10px;
     background: rgba(1, 13, 124, 0.80);
-    margin: 0 16px;
-    padding: 14px 5px 7px 12px;
+    margin: 0 35px;
+    padding: 15px;
     margin-top: 44px;
 }
-
 .rules p {
-    margin: 0;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
-
 .spacing {
     padding-top: 25px;
 }
-
 #charger {
-    display:grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#charger > p {
+#charger p,
+#shirt p,
+#card p,
+#pillow p {
+    margin: 50px 0 28px 0;
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    -webkit-text-stroke: 2px #F05411;
+    text-transform: uppercase;
     text-align: center;
-    margin: 43px 0 0 0;
+    text-shadow: -1.5px -1.5px 0 #f05411, 1.5px -1.5px 0 #f05411, -1.5px 1.5px 0 #f05411, 1.5px 1.5px 0 #f05411;
 }
-
-#charger > img {
-    margin-top: 28px;
+#charger img {
+    width: 35%;
 }
-
-#shirt > p {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    -webkit-text-stroke: 2px #F05411;
-    text-align: center;
-    margin: 28px 0 0 0;
+#shirt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.grid-container {
+#shirt .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 32px 0;
+    gap: 15px;
+    margin: 0 15px 0 15px;
     justify-items: center;
     justify-content: center;
 }
-  
-.item1 { grid-area: 1 / 1 / 2 / 2; }
-.item2 { grid-area: 1 / 2 / 2 / 3; }
-.item3 { grid-area: 2 / 1 / 3 / 2; }
-.item4 { grid-area: 2 / 2 / 3 / 3; }
-
+#shirt .grid-container img {
+    width: 100%;
+    border: 0.2rem solid #f05411;
+}
 #card {
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 525px;
 }
-
-#card > p {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    -webkit-text-stroke: 2px #F05411;
-    text-align: center;
-    margin: 20px 0 0 0;
-}
-
 #card-img {
     position: relative;
     top: 0;
     left: 0;
-    margin-top: 23px;
 }
-
+#card-img img {
+    width: 50%;
+}
 #card-img #card-50k {
     position: relative;
-    top: 100px;
-    left: 90px;
+    transform: translateX(50%) translateY(50%);
 }
-
 #card-img #card-10k {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    transform: translateX(15%) translateY(20%) rotate(-22.602deg);
 }
-
 #card-img #card-20k {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    transform: translateX(85%) translateY(20%) rotate(22.135deg);
 }
-
-#pillow > p {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    -webkit-text-stroke: 2px #F05411;
-    text-align: center;
-    margin: 20px 0 0 0;
+#pillow .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin: 0 15px 0 15px;
+    justify-items: center;
+    justify-content: center;
 }
-  
+#pillow .grid-container img {
+    width: 80%;
+}
 .item1 { grid-area: 1 / 1 / 2 / 2; }
 .item2 { grid-area: 1 / 2 / 2 / 3; }
 .item3 { grid-area: 2 / 1 / 3 / 2; }
 .item4 { grid-area: 2 / 2 / 3 / 3; }
-.item5 { grid-area: 3 / 1 / 3 / span 2; }
+.item5 { grid-area: 3 / 1 / 3 / span 2; width: 45%!important }
+/*-- End-Gift-Area --*/
 
-#events {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-#events .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-#events .image2 {
-    position: absolute;
-    top: 27px;
-    left: 25px;
-}
-/* The actual timeline (the vertical ruler) */
+/*-- Events-Area --*/
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -377,456 +258,200 @@ body {
     bottom: 0;
     left: 8%;
     margin-left: -3px;
+    border-radius: 0.5rem;
+    height: 100%;
 }
-
-/* Container around content */
 .container {
     padding: 5px 0 0 15px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 75%;
 }
-
-/* The circles on the timeline */
 .container::after {
     content: '';
     position: absolute;
-    width: 18px;
-    height: 18px;
-    right: -17px;
+    width: 20px;
+    height: 20px;
     background-color: white;
-    top: 30px;
+    top: 35px;
     border-radius: 50%;
     z-index: 1;
 }
-
-
-/* Place the container to the right */
 .right {
     left: 9.64%;
 }
-
-/* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -3.5%;
 }
-
-/* The actual content */
 .content {
-    width: 350px;
+    width: 100%;
     text-align: start;
     padding: 0 0 25px 0;
     position: relative;
 }
-
-.content p {
+.timeline .content p {
     margin: 25px 0 0 0;
-    width: 100%;
     color: #FFF;
-    font-family: Montserrat;
-    font-size: 15px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    width: 100%;
 }
+/*-- End-Events-Area --*/
 
-#food {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 23px;
-}
-#food .image1 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-#food .image2 {
-    position: absolute;
-    top: 30px;
-    left: 100px;
-}
-
-.food {
+/*-- Food-Area --*/
+#food-area .menu {
     border-radius: 10px;
     background: rgba(1, 13, 124, 0.80);
-    margin: 0 16px;
-    padding: 14px 5px 7px 12px;
+    margin: 0 35px;
+    padding: 15px;
     margin-top: 44px;
 }
-
-.food p {
+#food-area .menu p {
     margin: 0;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
     font-weight: 900;
     line-height: 2.3;
 }
+#food-area .content-title img {
+    width: 60% !important;
+}
+/*-- End-Food-Area --*/
 
+/*-- Footer --*/
 footer {
     background: #00155C;
-    height: 131px;
     margin-top: 21px;
-}
-
-.footer {
     width: 100%;
-    height: 42px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-rows: auto auto;
     justify-content: center;
-    margin-top: 6px;
+    align-items: center;
+    margin-top: 15px;
 }
-
-.footer > img {
+footer img {
+    width: 20%;
     margin-top: 7px;
 }
-
-#footer {
-    width: 100%;
-    display: block;
-}
-
 .footer-content {
     width: 100%;
     justify-content: center;
     display: flex;
-    height: 69px;
 }
-
-.footer-content > p {
-    margin: 14px 0 0 0;
-    width: 370px;
+.footer-content p {
+    margin: 15px 0;
     color: #FFF;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 7px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 900;
     line-height: 2.0;
 }
+/*-- End-Footer --*/
 
-#khu-tuu-lau .accordion-open-img {
-    position: absolute;
-    right: 20px;
-}
 
-#khu-thi-luyen-moc-nhan .accordion-open-img {
-    position: absolute;
-    right: 15px;
-}
-
-#khu-oot-va-boc-que .accordion-open-img {
-    position: absolute;
-    right: 10px;
-}
-
-#khu-quay-chaos {
-    position: relative;
-}
-
-#khu-quay-chaos .accordion-open-img {
-    position: absolute;
-    right: 3px;
-    top: -14px;
-}
-
-#khu-trải-nghiệm-game-mới .accordion-open-img {
-    position: absolute;
-    right: 0;
-}
-
-#checkin .accordion-open-img {
-    position: absolute;
-    right: 20px;
-}
-
-@media screen and (width: 414px) {
-    body {
-        background-size: 414px auto;
+@media screen and (max-width: 580px) {
+    .accordion-title {
+        width: 100%;
+        height: 100%;
     }
-    .container-1 {
-        width: 414px;
-    }
-    .image1 {
-        width: 414px;
-    }
-    #gaming-area .image1 {
-        position: relative;
-        top: 0;
-        left: 2px;
-    }
-    #gaming-area .image2 {
-        position: absolute;
-        top: 25px;
-        left: 23px;
-    }
-
-    #gift-area .image1 {
-        position: relative;
-        top: 0;
-        left: 2px;
-    }
-    #gift-area .image2 {
-        position: absolute;
-        top: 16px;
-        left: 22px;
-    }
-
-    #events .image1 {
-        position: relative;
-        top: 0;
-        left: 2px;
-    }
-    #events .image2 {
-        position: absolute;
-        top: 27px;
-        left: 20px;
-    }
-
-    #food .image1 {
-        position: relative;
-        top: 0;
-        left: 2px;
-    }
-    #food .image2 {
-        position: absolute;
-        top: 28px;
-        left: 100px;
-    }
-
-    .food {
-        margin-left: 20px;
-    }
-
-    .rules {
-        margin: 25px;
-    }
-
-    #khu-tuu-lau {
-        width: 400px;
-        margin-left: 10px;
-    }
-    #khu-tuu-lau .accordion-open-img {
-        position: absolute;
-        right: 10px;
-    }
-    #khu-thi-luyen-moc-nhan {
-        width: 400px;
-        margin-left: 10px;
-    }
-    #khu-thi-luyen-moc-nhan .accordion-open-img {
-        position: absolute;
-        right: 4px;
-    }
-    #khu-oot-va-boc-que {
-        position:relative;
-        width: 400px;
-        margin-left: 10px;
-    }
-    #khu-oot-va-boc-que .accordion-open-img {
-        position: absolute;
-        right: 4px;
-    }
-    #khu-quay-chaos {
-        position: relative;
-        width: 400px;
-        margin-left: 10px;
-    }
-    #khu-quay-chaos .accordion-open-img {
-        position: absolute;
-        right: -10px;
-        top: -10px;
-    }
-    #khu-trải-nghiệm-game-mới {
-        width: 400px;
-        margin-left: 10px;
-    }
-    #khu-trải-nghiệm-game-mới .accordion-open-img {
-        position: absolute;
-        right: -5px;
-    }
-    #checkin {
-        position: relative;
-        width: 400px;
-        margin-left: 10px;
-    }
-}
-
-@media screen and (width: 390px) {
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .container-1 {
+    #logo-1,
+    #logo-2,
+    #logo-3,
+    #logo-4,
+    #logo-5,
+    #logo-6 {
         width: 100%;
     }
-    header {
-        margin-left: 40px;
-    }
-    #money img {
-        width: 375px;
-    }
-    #gaming-area {
-        margin-left: 35px;
-    }
-    #gift-area {
-        margin-left: 55px;
-    }
-    #food {
-        margin-left: 25px;
-    }
-    .grid-container {
-        margin-left: -30px
-    }
-    #events .image1 {
-        position: relative;
-        top: 0;
-        left: 32px;
-    }
-    #card-img {
-        position: relative;
-        top: 0;
-        left: -18px;
-        margin-top: 23px;
-    }
-    .image1 {
-        width: 390px;
-    }
-    #gaming-area .image1 {
-        position: relative;
-        top: 0;
-        left: 24px;
-    }
-    #gaming-area .image2 {
-        position: absolute;
-        width: 350px;
-        top: 24px;
-        left: 45px;
-    }
-    #gift-area .image1 {
-        position: relative;
-        top: 0;
-        left: 3px;
-    }
-    #gift-area .image2 {
-        position: absolute;
-        width: 350px;
-        top: 18px;
-        left: 23px;
-    }
-    #events .image1 {
-        position: relative;
-        top: 0;
-        left: 42px;
-    }
-    #events .image2 {
-        position: absolute;
-        width: 350px;
-        top: 25px;
-        left: 60px;
-    }
-    .timeline {
-        margin-left: 20px;
-    }
-    #food .image1 {
-        position: relative;
-        top: 0;
-        left: 10px;
-    }
-    #food .image2 {
-        position: absolute;
-        top: 26px;
-        left: 90px;
-    }
-    footer {
-        margin-left: 25px;
+    .right::after {
+        left: -5.5%;
     }
 }
+$(document).ready(function(){
+    $("#plus-1").click(function(){
+        $("#khu-tuu-lau").show();
+        $("#item-1").hide()
+    });
+});
 
-@media screen and (width: 375px) {
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .container-1 {
-        width: 100%;
-    }
-    header {
-        margin-left: 20px;
-    }
-    #money img {
-        width: 375px;
-    }
-    #gaming-area {
-        margin-left: 30px;
-    }
-    #gift-area {
-        margin-left: 45px;
-    }
-    #food {
-        margin-left: 30px;
-    }
-    .grid-container {
-        margin-left: -12px;
-    }
-    #events .image1 {
-        position: relative;
-        top: 0;
-        left: 32px;
-    }
-    .image1 {
-        width: 390px;
-    }
-    #gaming-area .image1 {
-        position: relative;
-        top: 0;
-        left: 5px;
-    }
-    #gaming-area .image2 {
-        position: absolute;
-        width: 350px;
-        top: 24px;
-        left: 25px;
-    }
-    #gift-area .image1 {
-        position: relative;
-        top: 0;
-        left: 3px;
-    }
-    #gift-area .image2 {
-        position: absolute;
-        width: 350px;
-        top: 18px;
-        left: 23px;
-    }
-    #events .image1 {
-        position: relative;
-        top: 0;
-        left: 34px;
-    }
-    #events .image2 {
-        position: absolute;
-        width: 350px;
-        top: 25px;
-        left: 54px;
-    }
-    .timeline {
-        margin-left: 20px;
-    }
-    #food .image1 {
-        position: relative;
-        top: 0;
-        left: 3px;
-    }
-    #food .image2 {
-        position: absolute;
-        top: 26px;
-        left: 90px;
-    }
-    footer {
-        margin-left: 25px;
-    }
-}
+$(document).ready(function(){
+    $("#minus-1").click(function(){
+        $("#khu-tuu-lau").hide();
+        $("#item-1").show();
+    })
+});
+
+$(document).ready(function(){
+    $("#plus-2").click(function(){
+        $("#khu-thi-luyen-moc-nhan").show();
+        $("#item-2").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#minus-2").click(function(){
+        $("#khu-thi-luyen-moc-nhan").hide();
+        $("#item-2").show();
+    })
+});
+
+$(document).ready(function(){
+    $("#plus-3").click(function(){
+        $("#khu-oot-va-boc-que").show();
+        $("#item-3").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#minus-3").click(function(){
+        $("#khu-oot-va-boc-que").hide();
+        $("#item-3").show();
+    })
+});
+
+$(document).ready(function(){
+    $("#plus-4").click(function(){
+        $("#khu-quay-chaos").show();
+        $("#item-4").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#minus-4").click(function(){
+        $("#khu-quay-chaos").hide();
+        $("#item-4").show();
+    })
+});
+
+$(document).ready(function(){
+    $("#plus-5").click(function(){
+        $("#khu-trải-nghiệm-game-mới").show();
+        $("#item-5").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#minus-5").click(function(){
+        $("#khu-trải-nghiệm-game-mới").hide();
+        $("#item-5").show();
+    })
+});
+
+$(document).ready(function(){
+    $("#plus-6").click(function(){
+        $("#checkin").show();
+        $("#item-6").hide()
+    });
+});
+
+$(document).ready(function(){
+    $("#minus-6").click(function(){
+        $("#checkin").hide();
+        $("#item-6").show();
+    })
+});
+*/
