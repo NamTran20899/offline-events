@@ -1,15 +1,32 @@
-let details = document.querySelectorAll('.accordion details')
+/*var details = document.querySelectorAll('.accordion')
 
 details.forEach(function (d, index) {
-  d.onclick = () => {
-    details.forEach(function(c, i) {
-      index === i ?'':c.removeAttribute('open')
-    });
-  };
-});
+    d.onclick = () => {
+        details.forEach(function(c, i) {
+            index === i ? console.log(i) : c.classList.remove("active");
+        });
+    };
+});*/
 
+var accdr = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < accdr.length; i++) {
+    accdr[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+
+    
+}
+/*
 $(document).ready(function(){
-    $("#plus-1").click(function(){
+    $("#sum-1").click(function(){
         $("#plus-1").hide();
         $("#minus-1").show();
     });
@@ -63,3 +80,4 @@ $(document).ready(function(){
         $("#plus-6").show();
     });
 });
+*/
