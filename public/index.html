@@ -6,12 +6,16 @@
     <link href="./style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Trang Chủ</title>
 </head>
 <body>
+    
     <main class="main">
+        
     <!-- Header -->
         <header>
             <!-- Logo -->
@@ -19,30 +23,32 @@
             <!-- Banner -->
             <div id="banner">
                 <img src="./images/Logo_ori_1.png" alt="logo chu cam" id="banner-logo-orange" />
-                <img src="./images/qua_tang_gia_tri_1.png" alt="qua tang tri gia" id="banner-gift" />
-                <img src="./images/2-billion.png" alt="2 ty" id="banner-money" />
+                <img src="./images/qua_tang_gia_tri_1.png" alt="qua tang tri gia" id="banner-gift" class="animate__animated animate__backInDown" />
+                <img src="./images/2-billion.png" alt="2 ty" id="banner-money" class="animate__animated animate__heartBeat animate__infinite" />
             </div>
             <!-- Địa chỉ -->
-            <div id="address">
-                <img src="./images/icon_location.svg" alt="pin" />
+            <div id="address" data-aos="fade-up">
+                <img src="./images/icon_location.svg" alt="pin" class="animate__animated animate__shakeY animate__infinite animate__slower" />
                 <p>Sảnh Diamond - Tầng 2 - The ADORA Grandview
                     421 Ngô Gia Tự, Phường 9, Quận 5, TP Hồ Chí Minh</p>
             </div>
         </header>
     <!-- End-Header -->
 
+    <!-- Content -->
         <!-- khu vực chơi game -->
         <div id="gaming-area">
-            <div class="content-title">
+            <div class="content-title" data-aos="zoom-in">
                 <img src="./images/khu_vuc_choi_game.png" alt="khu vuc choi game" />
             </div>
 
             <section class="holder">
 
                 <!-- Khu tửu lầu -->
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU TỬU LẦU</p>
                         </div>
@@ -62,9 +68,10 @@
                 </div>
 
                 <!-- Khu thí luyện mộc nhân -->
-                <div class="item">
+                <div class="item" data-aos="fade-left">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU THÍ LUYỆN <br> MỘC NHÂN</p>
                         </div>
@@ -84,9 +91,10 @@
                 </div>
 
                 <!-- Khu ott và bốc quẻ -->
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU OTT VÀ BỐC QUẺ</p>
                         </div>
@@ -106,9 +114,10 @@
                 </div>
 
                 <!-- Khu quay chaos -->
-                <div class="item">
+                <div class="item" data-aos="fade-left">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU QUAY CHAOS</p>
                         </div>
@@ -129,9 +138,10 @@
                 </div>
 
                 <!-- Khu trải nghiệm game mới -->
-                <div class="item">
+                <div class="item" data-aos="fade-right">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU TRẢI NGHIỆM <br> GAME MỚI</p>
                         </div>
@@ -151,9 +161,10 @@
                 </div>
 
                 <!-- Khu checkin -->
-                <div class="item">
+                <div class="item" data-aos="fade-left">
                     <div class="accordion">
-                        <img class="plus" id="plus-1" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="plus" src="./images/icon_plus.svg" alt="plus" />
+                        <img class="minus" src="./images/icon_minus.png" alt="plus" />
                         <div class="accordion-title">
                             <p>KHU CHECK IN</p>
                         </div>
@@ -169,95 +180,107 @@
                         </p>      
                     </div>
                 </div>
-                
+
             </section>
         </div>
 
         <!-- Phần quà hấp dẫn -->
         <div id="gift-area">
-            <div class="content-title">
+            <div class="content-title" data-aos="zoom-in">
                 <img src="./images/phan_qua_hap_dan.png" alt="phan qua hap dan" />
             </div>
 
-            <div class="rules">
-                <p>Quy Tắc Đổi Quà:
-                <br> - Gối Ôm ADNX Day: 2 Sticker Game Bất Kỳ + 1 Sticker JX2
-                <br> - Áo Phông ADNX Day + Thẻ 50 ADNXu: 5 Sticker Bất Kỳ
-                <br> - Sạc Dự Phòng ADNX Day + Thẻ 50 ADNXu: 6 Sticker
-                <br> *Lưu ý: Các phần quà đều có giới hạn</p>
+            <div class="rules" data-aos="flip-down">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">Quy Tắc Đổi Quà:
+                    <br > - Gối Ôm ADNX Day: 2 Sticker Game Bất Kỳ + 1 Sticker JX2
+                    <br> - Áo Phông ADNX Day + Thẻ 50 ADNXu: 5 Sticker Bất Kỳ
+                    <br> - Sạc Dự Phòng ADNX Day + Thẻ 50 ADNXu: 6 Sticker
+                    <br> *Lưu ý: Các phần quà đều có giới hạn</p>
             </div>
             <div id="charger">
-                <p class="text-test" data-text="sac-du-phong">SẠC DỰ PHÒNG ADNX DAY</p>
-                <img src="./images/sac_du_phong.png" alt="sac du phong">
+                <p class="text-test" data-text="sac-du-phong" data-aos="zoom-out-up">SẠC DỰ PHÒNG ADNX DAY</p>
+                <img data-aos="flip-up" src="./images/sac_du_phong.png" alt="sac du phong">
             </div>
-            <div id="shirt">
-                <p>ÁO PHÔNG ADNX DAY</p>
+            <div id="shirt" >
+                <p data-aos="zoom-out-down">ÁO PHÔNG ADNX DAY</p>
                 <div class="grid-container">
-                    <img src="./images/ao_1.png" alt="ao 1" />
-                    <img src="./images/ao_2.png" alt="ao 2" />
-                    <img src="./images/ao_3.png" alt="ao 3" />
-                    <img src="./images/ao_4.png" alt="ao 4" />  
+                    <img src="./images/ao_1.png" alt="ao 1" data-aos="flip-left" />
+                    <img src="./images/ao_2.png" alt="ao 2" data-aos="flip-left" />
+                    <img src="./images/ao_3.png" alt="ao 3" data-aos="flip-left" />
+                    <img src="./images/ao_4.png" alt="ao 4" data-aos="flip-left" />  
                 </div>
             </div>
             <div id="card">
-                <p>THẺ ADNXU</p>
-                <div id="card-img">
+                <p data-aos="zoom-out-up">THẺ ADNXU</p>
+                <div id="card-img" data-aos="fade-down">
                     <img src="./images/10k_xu.png" alt="10k" id="card-10k" />
                     <img src="./images/20k_xu.png" alt="20k" id="card-20k" />
                     <img src="./images/50k_xu.png" alt="50k" id="card-50k" />
                 </div>
             </div>
             <div id="pillow">
-                <p>GỐI ÔM CHIBI</p>
+                <p data-aos="zoom-out-down">GỐI ÔM CHIBI</p>
                 <div class="grid-container">
-                    <img src="./images/chibi_1.png" alt="goi 1" class="item1" />
-                    <img src="./images/chibi_2.png" alt="goi 2" class="item2" />
-                    <img src="./images/chibi_3.png" alt="goi 3" class="item3" />
-                    <img src="./images/chibi_4.png" alt="goi 4" class="item4" />
-                    <img src="./images/chibi_5.png" alt="goi 5" class="item5" />
+                    <img src="./images/chibi_1.png" alt="goi 1" class="item1 animate__animated animate__jello animate__infinite animate__slower" data-aos="zoom-in-right" />
+                    <img src="./images/chibi_2.png" alt="goi 2" class="item2 animate__animated animate__jello animate__infinite animate__slower" data-aos="zoom-in-left" />
+                    <img src="./images/chibi_3.png" alt="goi 3" class="item3 animate__animated animate__jello animate__infinite animate__slower" data-aos="zoom-in-right" />
+                    <img src="./images/chibi_4.png" alt="goi 4" class="item4 animate__animated animate__jello animate__infinite animate__slower" data-aos="zoom-in-left" />
+                    <img src="./images/chibi_5.png" alt="goi 5" class="item5 animate__animated animate__jello animate__infinite animate__slower" data-aos="zoom-out-up" />
                 </div>
             </div>
         </div>
 
         <!-- Chương trình sự kiện -->
         <div id="events-area">
-            <div class="content-title">
+            <div class="content-title" data-aos="zoom-in">
                 <img src="./images/chuong_trinh_su_kien.png" alt="phan qua hap dan" />
             </div>
 
             <div class="timeline">
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>13h00 - 15h00: Chơi Game - Nhận Thưởng</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>15h00: Bắt đầu chương trình sự kiện</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>15h20: Ca Sĩ Khách Mời</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>16h05: Giới Thiệu JX2 Origin ADNX MOBILE</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>16h30: Ca Sĩ Khách Mời</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>17h30: Bốc Thăm May Mắn</p>
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content" data-aos="fade-left">
                         <p>18h00: Kết Thúc Chương Trình</p>
                     </div>
                 </div>
@@ -266,11 +289,11 @@
 
         <!-- Bàn yến tiệc -->
         <div id="food-area">
-            <div class="content-title">
+            <div class="content-title" data-aos="zoom-out">
                 <img src="./images/ban_yen_tiec.png" alt="phan qua hap dan" />
             </div>
 
-            <div class="menu">
+            <div class="menu"  data-aos="flip-down">
                 <p>
                     - Bánh Mì Nướng Hải Sản (Seafood Bruschetta)
                     <br> - Bánh Su (Mini Cream Puff)
@@ -279,22 +302,52 @@
                     <br> - 3 Loại Trái Cây (Fresh Fruits)
                     <br> - Trà và Cà Phê
                 </p>
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <!-- End-Content -->
 
     <!-- Footer -->
-    <footer>
-        <img src="./images/AdnX_Logo-2-15_1.png" alt="logo" />
-        <div class="footer-content">
-            <p>Công ty Cổ phần ADNX 
-                <br> Thời gian làm việc: 8:30 - 22:00 tất cả các ngày (GMT +7)
-                <br> Giấy phép số: 224/GP-BTTTT
-                <br> Văn phòng đại diện: Số 20, 16B1, Làng Việt Kiều Châu Âu, Phường Mộ Lao, Quận Hà Đông, Hà Nội.
-                <br> Địa chỉ trụ sở: Số 45, tổ 5 khu Tân Bình, TT Xuân Mai, huyện Chương Mỹ, Tp Hà Nội, Việt Nam.</p>
-        </div>
-    </footer>
+        <footer>
+            <img src="./images/AdnX_Logo-2-15_1.png" alt="logo" />
+            <div class="footer-content">
+                <p>
+                    Công ty Cổ phần ADNX 
+                    <br> Thời gian làm việc: 8:30 - 22:00 tất cả các ngày (GMT +7)
+                    <br> Giấy phép số: 224/GP-BTTTT
+                    <br> Văn phòng đại diện: Số 20, 16B1, Làng Việt Kiều Châu Âu, Phường Mộ Lao, Quận Hà Đông, Hà Nội.
+                    <br> Địa chỉ trụ sở: Số 45, tổ 5 khu Tân Bình, TT Xuân Mai, huyện Chương Mỹ, Tp Hà Nội, Việt Nam.
+                </p>
+            </div>
+        </footer>
     </main>
+    <!-- End-Footer -->
+
+    <!-- Scroll -->
+    <a href="#" class="top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#f05411" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+      </svg>
+    </a>
+    <!-- End-Scroll -->
 
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
